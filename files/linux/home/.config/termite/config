@@ -1,0 +1,141 @@
+[options]
+
+resize_grip = false
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = true
+visible_bell = false
+mouse_autohide = true
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+
+font = Hack Regular 16px
+
+scrollback_lines = 1000
+search_wrap = true
+#icon_name = terminal
+#geometry = 640x480
+
+# "system", "on" or "off"
+cursor_blink = system
+
+# "block", "underline" or "ibeam"
+cursor_shape = block
+
+# $BROWSER is used by default
+browser = chromium
+
+# word characters used for word selection
+# (default if unset: all graphic non-punctuation/space characters)
+#word_chars = -A-Za-z0-9,./?%&#:_=+@~
+
+# [colors]
+#
+# foreground = #FFFFFF
+# background  = rgba(17, 17, 17, 0.8)
+# cursor = #FFFFFF
+#
+# # dark grey
+# highlight = #2f2f2f
+#
+# # black
+# color0 = #000000
+# # dark red
+# color1 = #AA0000
+# # (deep) green
+# color2 = #00AA00
+# # brown
+# color3 = #AA5500
+# # dark blue
+# color4 = #0000AA
+# # purple
+# color5 = #AA00AA
+# # blue green
+# color6 = #00AAAA
+# # medium grey
+# color7 = #AAAAAA
+# # medium dark grey
+# color8 = #555555
+# # light red
+# color9 = #FF5555
+# # bright green
+# color10 = #55FF55
+# # yellow
+# color11 = #FFFF55
+# # blue
+# color12 = #5555FF
+# # magenta
+# color13 = #FF55FF
+# # cyan
+# color14 = #55FFFF
+# # white
+# color15 = #FFFFFF
+#
+# [hints]
+#
+# foreground = #55FFFF
+#
+# #font = Monospace 12
+# #foreground = #dcdccc
+# #background = #3f3f3f
+# #padding = 2
+# #border = #3f3f3f
+# #border_width = 0.5
+# #roundness = 2.0
+
+[colors]
+# from clrs.cc
+
+foreground          = #ffffff
+foreground_bold     = #ffffff
+cursor              = #ffffff
+cursor_foreground   = #ffffff
+background          = rgba(17, 17, 17, 0.8)
+highlight           = #dddddd
+
+# Black, Gray, Silver, White
+color0  = #111111
+color8  = #aaaaaa
+color7  = #dddddd
+color15 = #ffffff
+
+# Red
+color1  = #ff4136
+color9  = #ff4136
+
+# Green
+# color2  = #2ecc40
+color2 = #3D9970
+color10 = #01ff70
+
+# Yellow
+color3  = #ffdc00
+color11 = #ffdc00
+
+# Blue
+color4  = #0074d9
+color12 = #7fdbff
+
+# Purple
+color5  = #f012be
+color13 = #f012be
+
+# Teal
+color6  = #39cccc
+color14 = #39cccc
+
+# Extra colors
+# navy
+color16 = #001f3f
+# aqua
+color17 = #7fdbff
+# olive
+color18 = #3d9970
+# orange
+color19 = #ff851b
+# maroon
+color20 = #85144b
+# purple
+color21 = #b10dc9

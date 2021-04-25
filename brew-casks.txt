@@ -1,0 +1,15 @@
+1password
+chromium
+google-chrome
+hammerspoon
+imageoptim
+istat-menus
+kindle
+robo-3t
+signal
+slack
+sublime-text
+synergy
+visual-studio-code
+vlc
+zoom

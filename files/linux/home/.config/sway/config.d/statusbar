@@ -1,0 +1,28 @@
+#
+# Status bar
+#
+
+bar {
+  font pango:Hack, Font Awesome 5 Free 8
+  position top
+  separator_symbol "·"
+  strip_workspace_numbers yes
+  status_command i3status
+  tray_output primary
+  # tray_output none
+
+  # statusbar colors    border     background text
+  colors {
+    background          $bg
+    statusline          $sl
+    separator           $tx
+    focused_workspace   $ia        $ia        $tx
+    active_workspace    $gn        $ac        $tx
+    inactive_workspace  $bg        $fg        $ia
+    urgent_workspace    $ac        $bg        $ac
+
+    # statusline #ffffff
+    # background #323232
+    # inactive_workspace #32323200 #32323200 #5c5c5c
+  }
+}

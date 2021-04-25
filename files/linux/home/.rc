@@ -1,0 +1,16 @@
+#
+# linux/home/.rc
+#
+
+__THIS_FILE__="linux/home/.rc"
+# echo $__THIS_FILE__
+export __LOAD_ORDER__="$__LOAD_ORDER__ $__THIS_FILE__"
+
+# nvm
+source /usr/share/nvm/init-nvm.sh
+
+# termite
+if [[ $TERM == xterm-termite ]]; then
+  . /etc/profile.d/vte.sh
+  __vte_osc7
+fi

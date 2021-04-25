@@ -1,0 +1,19 @@
+#
+# Set display mode
+#
+
+set $displayMode "Set display mode [a]uto [v]irtual"
+bindsym $mod+m mode $displayMode
+
+mode $displayMode {
+  bindsym a exec "\
+    xrandr --auto && \
+    feh --bg-scale ~/.config/i3/bg.png"; \
+    mode "default"
+  bindsym v exec "\
+    ~/.screenlayout/virtual.sh && \
+    feh --bg-scale ~/.config/i3/bg.png"; \
+    mode "default"
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}

@@ -1,0 +1,176 @@
+#
+# Key bindings
+#
+
+# start a terminal
+bindsym $mod+Return exec $term
+
+# kill focused window
+bindsym $mod+Shift+q kill
+# bindsym $alt+Shift+w exec --release "termite --name=_xkill_ -e xkill"
+
+# start dmenu (a program launcher)
+bindsym $mod+d exec $menu
+
+# Exit, Reload, Restart
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway?' -b 'Yes, exit sway' 'swaymsg exit'"
+
+# Mouse
+
+# Drag floating windows by holding down $mod and left mouse button.
+# Resize them with right mouse button + $mod.
+# Despite the name, also works for non-floating windows.
+# Change normal to inverse to use left mouse button for resizing and right
+# mouse button for dragging.
+floating_modifier $mod normal
+
+# Mouse magic
+# bindsym --whole-window $alt+button10 workspace prev_on_output
+# bindsym --whole-window $alt+button11 workspace next_on_output
+
+#
+# Change direction + focus
+#
+
+# change focus
+# bindsym $mod+$left focus left
+# bindsym $mod+$down focus down
+# bindsym $mod+$up focus up
+# bindsym $mod+$right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# # move focused window
+# bindsym $mod+Shift+$left move left
+# bindsym $mod+Shift+$down move down
+# bindsym $mod+Shift+$up move up
+# bindsym $mod+Shift+$right move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Workspace shortcuts
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# Note: workspaces can have any name you want, not just numbers.
+# We just use 1-10 as the default.
+
+# Tab between workspace
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
+#
+# Layout stuff
+#
+
+# Split, fullscreen, container modes
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+#
+# Floating window shortcuts
+#
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+bindsym $mod+Shift+a focus child
+
+#
+# Scratchpad
+#
+
+# Sway has a "scratchpad", which is a bag of holding for windows.
+# You can send windows there and get them back later.
+
+# Move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
+
+#
+# Special keys
+#
+
+# F1	XF86AudioMute
+# bindsym XF86AudioMute           exec $psst amixer set Master toggle
+# F2	XF86AudioLowerVolume
+# bindsym XF86AudioLowerVolume    exec $psst amixer -q sset Master 5%-
+# F3	XF86AudioRaiseVolume
+# bindsym XF86AudioRaiseVolume    exec $psst amixer -q sset Master 5%+
+# F4	XF86MonBrightnessDown
+# bindsym XF86MonBrightnessDown   exec $psst xbacklight -dec 1
+# F5	XF86MonBrightnessUp
+# bindsym XF86MonBrightnessUp     exec $psst xbacklight -inc 1
+# F6	Super_L + P
+# F7	Nothing
+# F8	Super_L + Tab
+# F9	Nothing
+# F10	Turns Keyboard backlight on/off
+# F11	Print
+# F12	Insert
+
+# bindsym XF86ScreenSaver         exec $psst ~/.config/i3/scripts/i3exit.sh lock
+# # bindsym $sup+space              exec $psst ~/.config/i3/scripts/i3exit.sh lock
+# bindsym XF86Sleep               exec $psst ~/.config/i3/scripts/i3exit.sh suspend
+# bindsym XF86Launch1             exec $psst speedcrunchs
+
+# bindsym --release Print exec "~/bin/screenshot ~/Pictures/screenshots/$(date --iso-8601='seconds').png"

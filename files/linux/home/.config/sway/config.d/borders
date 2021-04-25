@@ -1,0 +1,8 @@
+#
+# Window borders
+#
+
+# new_window          pixel 0
+# new_float           pixel 3
+# hide_edge_borders   smart
+bindsym $alt+b border toggle

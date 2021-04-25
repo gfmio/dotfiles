@@ -1,0 +1,21 @@
+# sway config file
+# Read `man 5 sway` for a complete reference.
+
+include ./config.d/variables
+include ./config.d/output
+include ./config.d/input
+include ./config.d/autostart
+include ./config.d/font
+include ./config.d/borders
+include ./config.d/colors
+include ./config.d/keybindings
+
+#include ./config.d/resize-mode
+include ./config.d/display-mode
+include ./config.d/system-mode
+
+include ./config.d/statusbar
+
+include ./config.d/floating
+
+include /etc/sway/config.d/*

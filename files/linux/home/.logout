@@ -1,0 +1,7 @@
+#
+# linux/home/.logout
+#
+
+__THIS_FILE__="linux/home/.logout"
+# echo $__THIS_FILE__
+export __LOAD_ORDER__="$__LOAD_ORDER__ $__THIS_FILE__"

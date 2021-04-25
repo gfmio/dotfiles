@@ -1,0 +1,4 @@
+$SHELL --login
+startx
+sway
+zsh

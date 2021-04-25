@@ -1,0 +1,29 @@
+#
+# Variables
+#
+
+# Use Mod4 for Super key / Logo key. Use Mod1 for Alt.
+set $sup Mod4
+set $alt Mod1
+set $mod Mod1
+
+set $psst --no-startup-id
+
+# Your preferred terminal emulator
+set $term termite
+
+# Your preferred application launcher
+# Use this for the regular launcher
+set $menu dmenu_run
+# Use this for "desktop apps" with "pretty names" only
+# set $menu --no-startup-id i3-dmenu-desktop
+
+# Home row direction keys, like vim
+set $left "j"
+set $down "k"
+set $up "l"
+set $right semicolon
+# set $left h
+# set $down j
+# set $up k
+# set $right l
