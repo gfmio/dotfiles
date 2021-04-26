@@ -81,6 +81,13 @@ copyRoot() {
   copyFile $ROOT_DIR/$FILE /$FILE
 }
 
+install_amix_vimrc() {
+  if test ! -e ~/.vim_runtime; then
+    git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+    sh ~/.vim_runtime/install_awesome_vimrc.sh
+  fi
+}
+
 main() {
   linkHome .config/i3
   linkHome .config/i3blocks
@@ -112,6 +119,8 @@ main() {
   copyRoot etc/greetd/environments
   copyRoot etc/greetd/i3-config
   copyRoot etc/greetd/sway-config
+
+  install_amix_vimrc
 }
 
 main

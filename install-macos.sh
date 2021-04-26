@@ -65,6 +65,13 @@ copyHome() {
   copyFile $HOME_DIR/$FILE ~/$FILE
 }
 
+install_amix_vimrc() {
+  if test ! -e ~/.vim_runtime; then
+    git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+    sh ~/.vim_runtime/install_awesome_vimrc.sh
+  fi
+}
+
 main() {
   sourceHome .bashrc
   sourceHome .bash_profile
@@ -77,6 +84,8 @@ main() {
 
   linkHome .gitconfig
   linkHome .hammerspoon/init.lua
+
+  install_amix_vimrc
 }
 
 main
