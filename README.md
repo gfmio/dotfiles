@@ -4,13 +4,22 @@ My personal Linux and macOS config files.
 
 ## Features
 
-- Fully configured zsh and bash
+- Equivalently configured zsh and bash on macOS and Arch Linux with shared config files
 - Tab completion
-- nvm
-- pyenv
-- poetry
-- Shared config files
-- i3 and sway config
+- Shell integrations
+  - nvm
+  - pyenv
+  - poetry
+  - terraform
+- macOS:
+  - Hammerspoon
+  - Shell integrations:
+    - homebrew
+- Linux:
+  - Equivalent i3 and sway configs
+  - X config files
+  - termite
+  - greetd with greetd-gtk as login manager
 
 ## Todo
 
